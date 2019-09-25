@@ -7,3 +7,6 @@ y añadimos dependencias spring devtools y config server -> spring-cloud-config-
 
 * Despues creamos un repositorio git que añadimos al proyecto  spring-cloud-config-server, donde añadimos el 
 fichero properties
+
+** Con esto configuramos configServer a git
+** Luego nuestro proyecto de limits-service lo configuramos a configServer
