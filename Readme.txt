@@ -28,6 +28,9 @@ Pero cada vez que se crea un nuevo servidor habria que cambiar configuracion, qu
 que es un registro de nombres. Cada vez queremos hablar con un servicio hablamos con servidor de nombres y le pregunta que instancias se estan 
 ejecutando. Creamos un proyecto con eureka naming server, importando eureka, config client, actuator y devtools
 
+http://localhost:8100/currency-converter-feign/from/EUR/to/IRN/quantity/10
+
+
 Habilitamos eureka en la app y el las propiedades:
 spring.application.name=netflix-eureka-naming-server
 server.port=8761
@@ -38,3 +41,5 @@ eureka.client.fetch-registry=false
 
 En el servicio que queremos usarlo qutamos en las propiedades currency-exchange-service.ribbon.listOfServers y 
 ya usarmos eureka.client.service-url.default-zone 
+
+http://localhost:8761/
